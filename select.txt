@@ -1,0 +1,4 @@
+select_fil=Select(WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="P801_METRIC"]'))))
+select_fil.select_by_index(1)
+text_value=select_fil.first_selected_option
+str('{:02d}'.format(n))
